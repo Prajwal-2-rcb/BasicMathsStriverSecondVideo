@@ -2,9 +2,12 @@ import java.util.Scanner;
 
 public class FindExponential {
 
-    public static int findExponential(int x,int n){
-        int ans=1;
+    public static double findExponential(int x,int n){
+        double ans=1;
         int m=n;
+        if(m<0){
+            n=n*(-1);
+        }
         while(n>0){
             if(n%2==1){
                 ans=ans*x;
